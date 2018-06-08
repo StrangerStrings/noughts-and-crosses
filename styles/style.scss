@@ -1,0 +1,118 @@
+//colors:
+// lighter grey: #282C34
+// darker grey : #21252B
+
+// darker purple: #7A58D2
+//lighter purple: #C178DD
+
+// dark blue  #283091
+
+* {
+  background-color: #282C34;
+  color: #21252B;
+  font-family: sans-serif;
+}
+html{
+  padding-left: 50px;
+}
+h1{
+  font-size: 60px;
+  letter-spacing: -2px;
+  padding-left: 230px;
+  margin-bottom: -5px;
+
+}
+h2{
+  font-size: 40px;
+  letter-spacing: -2px;
+  padding-left: 180px;
+  margin-top: -5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.grid{
+  width: 360px;
+  border: solid #21252B 10px;
+  border-radius: 60px;
+}
+
+div.outbox{
+  display: inline-block;
+  box-sizing: border-box;
+  height: 120px; width: 120px;
+  padding:7px;
+  // border: #21252B 7px solid;
+  cursor: pointer;
+  margin-bottom:-6px;
+  background-color: transparent;
+}
+// .outbox:nth-child(an+b)
+.outbox:nth-child(2){
+  border-left:#21252B 7px solid;
+  padding-left: 0px;
+  border-bottom:#21252B 7px solid;
+  padding-bottom: 0px;
+  border-right:#21252B 7px solid;
+  padding-right: 0px;
+}
+.outbox:nth-child(4){
+  border-right:#21252B 7px solid;
+  padding-right: 0px;
+  border-bottom:#21252B 7px solid;
+  padding-bottom: 0px;
+  border-top:#21252B 7px solid;
+  padding-top: 0px;
+}
+.outbox:nth-child(6){
+  border-bottom:#21252B 7px solid;
+  padding-bottom: 0px;
+  border-top:#21252B 7px solid;
+  padding-top:0px;
+  border-left:#21252B 7px solid;
+  padding-left:0px;
+}
+.outbox:nth-child(8){
+  border-top:#21252B 7px solid;
+  padding-top: 0px;
+  border-right:#21252B 7px solid;
+  padding-right: 0px;
+  border-left:#21252B 7px solid;
+  padding-left: 0px;
+}
+.ball{
+  height: 30px; width: 80px;
+  margin: 38px 15px  ;
+  border-radius: 50%;
+  background-color: #C178DD;
+}
+.box{
+  height: 80px; width: 30px;
+  margin: 15px 38px;
+  border-radius: 50%;
+  background-color: #7A58D2;
+}
+.ball-win{
+  height: 80px; width: 80px;
+  margin: 14px;
+  border-radius: 50%;
+  background-color: #C178DD;
+}
+.box-win{
+  margin: 14px;
+  height: 80px; width: 80px;
+  border-radius: 50%;
+  background-color: #7A58D2;
+}
+
+
+/* .ball-win{
+  background-color: green;
+  height: 84px; width: 84px;
+  border-radius: 50%;
+  margin: 0px;
+}
+.box-win{
+  background-color: red;
+  margin: 7px;
+  height: 70px; width: 70px;
+} */
