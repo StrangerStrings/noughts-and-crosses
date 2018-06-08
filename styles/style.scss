@@ -98,21 +98,20 @@ div.outbox{
   background-color: #C178DD;
 }
 .box-win{
-  margin: 14px;
+  margin: 111px;
   height: 80px; width: 80px;
   border-radius: 50%;
   background-color: #7A58D2;
 }
-
-
-/* .ball-win{
-  background-color: green;
-  height: 84px; width: 84px;
+.ball-draw{
+  height: 30px; width: 80px;
+  margin: 38px 15px  ;
   border-radius: 50%;
-  margin: 0px;
+  background-color: #C178DD;
 }
-.box-win{
-  background-color: red;
-  margin: 7px;
-  height: 70px; width: 70px;
-} */
+.box-draw{
+  height: 80px; width: 30px;
+  margin: 15px 38px;
+  border-radius: 50%;
+  background-color: #7A58D2;
+}

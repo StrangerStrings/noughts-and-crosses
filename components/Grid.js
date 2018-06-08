@@ -143,7 +143,7 @@ export default class Grid extends React.Component{
   }
   render(){
     return (
-        <div>
+      <div>
         <h1>O&X</h1>
         <div className="grid">
         <Square name="0" changeSquare={this.playerFunc} squareState={this.state.masterArray[0]}/>
