@@ -21,7 +21,6 @@ export default class Grid extends React.Component{
     this.checkWin = this.checkWin.bind(this);
     this.tests = this.tests.bind(this);
     this.playAgain = this.playAgain.bind(this);
-    this.shitFunc = this.shitFunc.bind(this);
   }
 
   testForWin(arr){
@@ -64,7 +63,6 @@ export default class Grid extends React.Component{
       }
     }
     let index = this.tests(linesArray)
-    console.log(index)
     if (index){
       index = key[index[0]][index[1]]
     }
@@ -75,7 +73,6 @@ export default class Grid extends React.Component{
         index = this.state.masterArray.indexOf(0)
       }
     }
-    console.log(index);
 
     this.changeSquare(2,index)
 
@@ -128,6 +125,13 @@ export default class Grid extends React.Component{
     if(foo.length == 0){
       someonesWon = true;
       this.setState(()=>({someonesWon:true}))
+      let tempArr = this.state.masterArray;
+      // tempArr = tempArr.map((p) => p+4)
+      for(var p=0; p<9 ;p++){
+        tempArr[p] += 4;
+      }
+      console.log(tempArr)
+      this.setState(() => ({ masterArray: tempArr }))
     }
   }
 
@@ -138,12 +142,10 @@ export default class Grid extends React.Component{
     someonesWon = false;
     playerTurn = true;
   }
-  shitFunc(){
-    console.log(this.state.masterArray);
-  }
+
   render(){
     return (
-      <div>
+        <div>
         <h1>O&X</h1>
         <div className="grid">
         <Square name="0" changeSquare={this.playerFunc} squareState={this.state.masterArray[0]}/>

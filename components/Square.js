@@ -10,6 +10,8 @@ const Square = (props) => {
       {props.squareState==2 && <div className="box"></div>}
       {props.squareState==3 && <div className="ball-win"></div>}
       {props.squareState==4 && <div className="box-win"></div>}
+      {props.squareState==5 && <div className="ball-draw"></div>}
+      {props.squareState==6 && <div className="box-draw"></div>}
     </div>
   );
 }
